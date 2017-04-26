@@ -26,7 +26,7 @@ public class NumbersTest {
 
     /**
      * Sample output:
-     *
+     * <pre>
      * 18014398509564934 - 18014398509481984 = 82950
      * 1.8014398509564936E16 - 1.8014398509481984E16 = 82952.0
      *
@@ -37,9 +37,11 @@ public class NumbersTest {
      *
      * 18014398509564937 - 18014398509481984 = 82953
      * 1.8014398509564936E16 - 1.8014398509481984E16 = 82952.0
-     *
+     * </pre>
      * The difference is sometimes more, sometimes less.
      * Total 750,000 inconsistencies in a sample of 1000,000
+     *
+     * @see https://en.wikipedia.org/wiki/Double-precision_floating-point_format
      */
     @Test
     public void testDoublePrecision() throws Exception {
